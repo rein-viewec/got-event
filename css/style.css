@@ -168,7 +168,7 @@
 
 .group .item__box {
   width: 360px;
-  padding: 10px;
+  padding: 8px;
 }
 
 .group .item__image {
@@ -220,11 +220,14 @@
     max-height: 340px;
   }
   .group .item__box {
+    width: 46vw;
+  }
+  .group .item__box.name {
     width: 100vw;
   }
   .group .item__image {
-    width: 100vw;
-    height: 100vw;
+    width: 48vw;
+    height: 48vw;
   }
 }
 
