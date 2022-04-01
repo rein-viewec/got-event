@@ -1,0 +1,126 @@
+@import '_mixins/_mixins'
+$mainColor: #BA0100
+
+.coupon
+    &__block
+        +b
+        +flex()
+        justify-content: space-between
+        align-items: center
+    &__item
+        width: 100%
+        max-width: 340px
+
+.item
+    &__block
+        +flex
+        +a
+        padding: 16px 0
+    &__box
+        +flex
+        justify-content: space-between
+        align-items: center
+        margin: 12px 0
+    &__image
+        +img
+        width: 320px
+        height: 320px
+        img
+            object-fit: cover
+    &__content
+        +flex
+        justify-content: start
+        align-items: center
+        width: calc(100% - 340px)
+        max-height: 340px
+    &__name
+         font-size: 1.5em
+         +break(4)
+         overflow: hidden
+         font-weight: bold
+    &__price
+        +b
+        font-size: 1.3em
+        font-weight: bold
+        padding: 10px 0
+    &__description
+        font-size: 1.2em
+        overflow: hidden
+        +break(5)
+
+.group
+    padding: 24px 0
+    width: 100%
+    justify-content: space-between
+    align-items: start
+    .item__box
+        width: 360px
+        padding: 10px
+    .item__image
+        width: 340px
+        height: 340px
+        padding: 0 0 16px 0
+    .name
+        align-self: center
+
+@media all and (max-width: 1200px)
+    .coupon
+        &__item
+            max-width: 33%
+    .item
+        &__image
+            width: 30vw
+            height: 30vw
+        &__content
+            padding: 10px
+            width: calc(100% - 30vw)
+    .group
+        .item__box
+            width: 32vw
+            // padding: 10px
+        .item__image
+            width: 30.5vw
+            height: 30.5vw
+
+@media all and (max-width: 720px)
+    .coupon
+        &__item
+            max-width: 100%
+    .item
+        &__image
+            width: 100vw
+            height: 100vw
+            padding: 10px
+        &__content
+            padding: 10px
+            width: 100%
+            max-height: 340px
+    .group
+        .item__box
+            width: 100vw
+        .item__image
+            width: 100vw
+            height: 100vw
+@media all and (max-width: 640px)
+    .comment__block
+        padding-top: 50px
+        .comment__title
+            width: 90%
+            padding: 0 12px
+            font-size: 1.7em
+        .comment__ranking__rate
+            img
+                max-width: 35px
+            span
+                &:first-child
+                    width: 100%
+        .comment__ranking__content
+            width: 100%
+            a
+                padding: 5px 0
+        .comment__item__name
+            > div
+                width: 100%
+        .comment__item__comment
+            +ib
+            max-width: 100%
