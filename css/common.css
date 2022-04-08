@@ -1179,6 +1179,7 @@
 }
 
 html {
+  font-family: 'MS Sans Serif';
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: .8em;

@@ -1,6 +1,7 @@
 @import '_mixins/_mixins'
 $mainColor: #BA0100
 
+
 .coupon
     &__block
         +b
@@ -57,21 +58,18 @@ $mainColor: #BA0100
         +break(5)
     &__btn
         text-align: center
-        color: #ffffff
-        background-color: #e66570
-        border-radius: 16px
-        padding: 8px
+        padding: 12px
         width: 100%
         font-size: 1.5em
-        border: 2px solid #4d4f70
+        border: 2px solid #444444
         +flex
         align-items: center
-        box-shadow: 0 8px 0 #4d4f70
+        box-shadow: 6px 6px 0 #444444
         &:hover
-            background-color: #ec8d82
             transform: translateY(2px)
         &:active
             transform: translateY(7px)
+            box-shadow: 6px 4px 0 #444444
         span
             font-weight: bold
             font-size: 2em

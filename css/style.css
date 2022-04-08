@@ -168,13 +168,10 @@
 
 .item__btn {
   text-align: center;
-  color: #ffffff;
-  background-color: #e66570;
-  border-radius: 16px;
-  padding: 8px;
+  padding: 12px;
   width: 100%;
   font-size: 1.5em;
-  border: 2px solid #4d4f70;
+  border: 2px solid #444444;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -194,12 +191,11 @@
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 8px 0 #4d4f70;
-          box-shadow: 0 8px 0 #4d4f70;
+  -webkit-box-shadow: 6px 6px 0 #444444;
+          box-shadow: 6px 6px 0 #444444;
 }
 
 .item__btn:hover {
-  background-color: #ec8d82;
   -webkit-transform: translateY(2px);
       -ms-transform: translateY(2px);
           transform: translateY(2px);
@@ -209,6 +205,8 @@
   -webkit-transform: translateY(7px);
       -ms-transform: translateY(7px);
           transform: translateY(7px);
+  -webkit-box-shadow: 6px 4px 0 #444444;
+          box-shadow: 6px 4px 0 #444444;
 }
 
 .item__btn span {
