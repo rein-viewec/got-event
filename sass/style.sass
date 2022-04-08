@@ -12,6 +12,14 @@ $mainColor: #BA0100
         max-width: 340px
 
 .item
+    &__title
+        +b
+        padding: 0
+        margin: 20px 0px 30px !important 
+        font-size: 2.5em
+        margin: 30px
+        border: solid #777885
+        border-width: 0 0 2px 0
     &__block
         +flex
         +a
@@ -47,7 +55,27 @@ $mainColor: #BA0100
         font-size: 1.2em
         overflow: hidden
         +break(5)
-
+    &__btn
+        text-align: center
+        color: #ffffff
+        background-color: #e66570
+        border-radius: 20px
+        padding: 10px
+        width: 100%
+        font-size: 1.7em
+        border: 3px solid #4d4f70
+        +flex
+        align-items: center
+        box-shadow: 0 8px 0 #4d4f70
+        &:hover
+            background-color: #ec8d82
+            transform: translateY(2px)
+        &:active
+            transform: translateY(7px)
+        span
+            font-weight: bold
+            font-size: 2em
+            margin-right: 4px
 .group
     padding: 24px 0
     width: 100%
