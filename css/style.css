@@ -170,11 +170,11 @@
   text-align: center;
   color: #ffffff;
   background-color: #e66570;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 16px;
+  padding: 8px;
   width: 100%;
-  font-size: 1.7em;
-  border: 3px solid #4d4f70;
+  font-size: 1.5em;
+  border: 2px solid #4d4f70;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
